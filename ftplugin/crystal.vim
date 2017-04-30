@@ -63,11 +63,11 @@ augroup plugin-ft-crystal
 augroup END
 
 if get(g:, 'crystal_define_mappings', 1)
-  nmap <buffer>gd <Plug>(crystal-jump-to-definition)
-  nmap <buffer>gc <Plug>(crystal-show-context)
-  nmap <buffer>gss <Plug>(crystal-spec-switch)
-  nmap <buffer>gsa <Plug>(crystal-spec-run-all)
-  nmap <buffer>gsc <Plug>(crystal-spec-run-current)
+  nnoremap <buffer>gd <Plug>(crystal-jump-to-definition)
+  nnoremap <buffer>gc <Plug>(crystal-show-context)
+  nnoremap <buffer>gss <Plug>(crystal-spec-switch)
+  nnoremap <buffer>gsa <Plug>(crystal-spec-run-all)
+  nnoremap <buffer>gsc <Plug>(crystal-spec-run-current)
 endif
 
 if &l:ofu ==# ''
